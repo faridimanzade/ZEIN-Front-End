@@ -1,0 +1,668 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    /* background-color: darkgrey; */
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: rgb(18,18,18);
+}
+
+.bgLayout,
+.bgMobile {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.bgMobile {
+    display: none;
+}
+
+
+
+
+
+/* ================================================================== INTRO CONTAINER */
+.introContainer {
+    width: 100%;
+    /* background-color: rgba(0, 139, 139, 0.397); */
+    background-color: transparent;
+}
+
+.introContainerCenter {
+    width: 90%;
+    margin: 80px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.introContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.introContent img {
+    width: 250px;
+    height: 68px;
+}
+
+.introContentInfo {
+    margin-top: 150px;
+}
+
+.introContentInfo h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.introContentInfo p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: white;
+}
+
+.introDownload {
+    margin-top: 110px;
+}
+
+.introDownload>a {
+    background-color: black;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    padding: 10px 82px 5px;
+    color: white;
+    border-radius: 16px;
+}
+
+.introSocialContact {
+    margin-top: 20px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.introSocialContact a {
+    color: black;
+}
+
+
+
+
+
+/* ==================================================================== STORE */
+.storesContainer {
+    /* background-color: rgba(184, 135, 11, 0.472); */
+    margin: 750px 0 0;
+    background-color: transparent;
+}
+
+.storesContainerCenter {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.storeContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.storeContent h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    color: #ffffff;
+}
+
+.storesImg {
+    display: flex;
+    flex-direction: row;
+}
+
+.storesImg a {
+    text-decoration: none;
+}
+
+.storesImg a:nth-child(1) {
+    margin-right: 15px;
+}
+
+.storesImg img {
+    width: 225px;
+    height: 65px;
+}
+
+
+
+
+
+/* ========================================================= CONTACT US */
+.contactUsContainer {
+    /* background-color: rgba(85, 107, 47, 0.349); */
+    background-color: transparent;
+}
+
+.contactUsCenter {
+    width: 900px;
+    margin: 700px auto 0;
+}
+
+.contactUsCenter h3 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 73px;
+    color: white;
+    text-align: center;
+}
+
+.contactUsCenter form {
+    background-color: transparent;
+}
+
+.inputFieldHolder {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputFieldHolder label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 32px;
+    color: white;
+    margin-top: 10px;
+}
+
+.inputField {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.inputField input {
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 10px;
+    color: white;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+.inputField input::placeholder {
+    color: #828282;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.inputField i {
+    font-size: 20px;
+    display: none;
+}
+
+.fa-check {
+    color: #6FCF97;
+}
+
+.fa-times {
+    color: #FF6666;
+}
+
+.contactUsCenter form input[type="submit"] {
+    border: none;
+    margin: 50px auto;
+    background: #FF6666;
+    border-radius: 16px;
+    color: black;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    outline: none;
+    padding: 10px 67px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ========================================================= FOOTER */
+footer {
+    /* background-color: thistle; */
+    background-color: transparent;
+}
+
+.footerCenter {
+    margin: 100px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    font-size: 20px;
+}
+
+.footerIcons a {
+    color: white;
+}
+
+.footerCenter img {
+    width: 250px;
+    height: 68px;
+}
+
+
+
+
+
+
+/* ============================================================================= MEDIA QUERIES */
+@media screen and (max-width: 1700px) {
+    .storesContainer {
+        margin: 600px 0 0;
+    }
+
+    .contactUsCenter {
+        margin-top: 400px;
+    }
+}
+
+
+@media screen and (max-width: 1550px) {
+    .storesContainer {
+        margin: 500px 0 0;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    .storesContainer {
+        margin: 350px 0 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .introContentInfo {
+        margin-top: 100px;
+    }
+
+    .introDownload {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .introContainerCenter,
+    .storesContainerCenter,
+    .footerCenter {
+        width: 1140px;
+    }
+
+    /* ============================================================================================ */
+    .contactUsCenter {
+        width: 900px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .introContainerCenter {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .storesContainerCenter,
+    .footerCenter {
+        width: 90%;
+    }
+
+    .storesContainer {
+        margin: 300px 0 0;
+    }
+
+    .contactUsCenter {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .introContent img,
+    .footerCenter img  {
+        width: 150px;
+        height: 48px;
+    }
+
+    .introContentInfo h2 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .introContentInfo p {
+        font-size: 20px;
+        line-height: 22px;
+        margin: 8px 0;
+    }
+
+    .introDownload>a {
+        padding: 8px 60px 3px;
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    .introSocialContact {
+        width: 175px;
+        font-size: 18px;
+    }
+
+    /* ============================================================================================ */
+    .contactUsCenter {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .introContentInfo {
+        margin-top: 80px;
+    }
+
+
+    .storesImg img {
+        width: 150px;
+        height: 40px;
+    }
+
+    .storesContainer {
+        margin: 250px 0 0;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .storesContainer {
+        margin: 200px 0 0;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .storesContainer {
+        margin: 150px 0 0;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .introContentInfo {
+        margin-top: 60px;
+    }
+
+    .storesContainer {
+        margin: 120px 0 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .bgLayout {
+        display: none;
+    }
+
+    .bgMobile {
+        display: block;
+    }
+
+    .introContainerCenter {
+        margin: 80px auto;
+    }
+
+    .introContentInfo {
+        margin-top: 80px;
+    }
+
+    .storesContainer {
+        margin: 850px 0 0;
+    }
+
+    .storesImg {
+        flex-direction: column;
+    }
+
+    .storesImg a:nth-child(1) {
+        margin-bottom: 15px;
+    }
+
+    .storeContent h2 {
+        margin-bottom: 100px;
+        margin-top: -50px;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .contactUsCenter h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .inputFieldHolder label {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .inputFieldHolder input {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .inputField {
+        padding: 0 10px;
+    }
+
+    .inputField i {
+        font-size: 18px;
+    }
+
+    .contactUsCenter form input[type="submit"] {
+        font-size: 18px;
+        line-height: 27px;
+        color: white;
+    }
+
+    .inputField input {
+        padding: 5px 10px;
+    }
+
+    .footerIcons{
+        width: 150px;
+    }
+
+    .footerIcons a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .storesContainer {
+        margin: 650px 0 0;
+    }
+
+    .storeContent h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .introContainerCenter {
+        margin: 50px auto;
+    }
+
+    .introContentInfo h2 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    .introContentInfo p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+
+    .introDownload>a {
+        font-size: 18px;
+    }
+
+    .introSocialContact a {
+        color: white;
+    }
+
+    .storesContainer {
+        margin: 550px 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .storesContainer {
+        margin: 450px 0 0;
+    }
+
+    .contactUsCenter{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .introContent img,
+    .footerCenter img {
+        width: 120px;
+        height: 40px;
+    }
+
+    .introContentInfo {
+        margin-top: 50px;
+    }
+
+    .introDownload {
+        margin-top: 50px;
+    }
+
+    .introDownload>a {
+        padding: 5px 40px 2px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .introContainerCenter {
+        margin: 30px auto;
+    }
+
+    .introSocialContact {
+        width: 118px;
+    }
+
+    .storesContainer {
+        margin: 400px 0 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .storesContainer {
+        margin: 300px 0 0;
+    }
+
+    .contactUsCenter {
+        width: 98%;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .introContentInfo h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .introContentInfo p {
+        font-size: 14px;
+    }
+
+    .introContentInfo,
+    .introDownload {
+        margin-top: 30px;
+    }
+
+    .storesContainer {
+        margin: 200px 0 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .storesContainer {
+        margin: 150px 0 0;
+    }
+
+    .storesImg img {
+        width: 100px;
+        height: 25px;
+    }
+
+    .footerIcons{
+        margin-bottom: 20px;
+        justify-content: space-between;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .storesContainer {
+        margin: 50px 0 0;
+    }
+
+    .storeContent h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
